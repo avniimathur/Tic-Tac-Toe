@@ -54,7 +54,7 @@ def find__best__move(board):
     for row in range(3):
         for col in range(3):
             if board[row][col] == '':
-                board[row][col] = 'X'
+                board[row][col] = '0'
                 move_eval = minimax(board, 0, False)
                 board[row][col] = ''
                 if move_eval > best__eval:
